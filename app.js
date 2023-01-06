@@ -33,7 +33,7 @@ class Atleta {
             return total+atual
         },0)
           let media = (somaNotasComputadas/notasComputadas.length).toFixed(2);
-          return "Média: " +media;
+          return "Média válida: " +media;
     }
     obtemNomeAtleta(){
         return "Nome: "+this.nome;
@@ -41,6 +41,9 @@ class Atleta {
         return "Idade: "+ this.idade;
     } obtemPesoAtleta(){
         return "Peso: " + this.peso;
+    
+    } obtemAlturaAtleta(){
+       return "Altura: " + this.altura;
     } obtemNotasAtleta(){
         return "Notas: " + this.notas.join(" , ");
     } obtemCategoria(){
@@ -65,6 +68,8 @@ function dadosAtletas(atleta){
  console.log(idade)
  let peso = atleta.obtemPesoAtleta();
  console.log(peso)
+ let altura = atleta.obtemAlturaAtleta();
+ console.log(altura)
  let notas = atleta.obtemNotasAtleta();
  console.log(notas)
  let categoria = atleta.obtemCategoria();
